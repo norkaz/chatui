@@ -1,6 +1,7 @@
 import React from 'react';
 import ChatSearch from '../components/search/Chat-Search';
 import Conversations from '../components/conversations/Conversations';
+import ChatHeader from '../components/chatheader/Cheat-Header';
 import ChatWindow from '../components/chatwindow/Chat-Window';
 import './ChatShell.css';
 
@@ -12,6 +13,7 @@ function ChatShell () {
                 <Conversations/>
             </div>
             <div className="chat-col right-col">
+                <ChatHeader/>
                 <ChatWindow/>
             </div>                   
         </div>

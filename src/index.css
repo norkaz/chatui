@@ -64,6 +64,7 @@ code {
   /*colors*/
   --primaryColor: #0077ff;
   --secondaryColor: #FFFFFF;
+  --primaryColorHover: #318ff9;
   /*sizes*/
   --breakpointMedium: 1280px;
   --breakpointSmall: 768px;
@@ -83,4 +84,8 @@ input, button, textarea {
 button {
   background: var(--primaryColor);
   color: var(--secondaryColor);
+}
+button:hover {
+  background: var(--primaryColorHover);
+  cursor:pointer;
 }

@@ -28,9 +28,6 @@
     background: rgb(104, 104, 104);
     align-self: flex-start;
 }
-.message-item.out {
-    float:right;  
-}
 
 .message-item.out .message {
     background: rgb(0, 119, 255);

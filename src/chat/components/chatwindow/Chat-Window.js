@@ -17,16 +17,22 @@ const Messages = ({ messages }) => {
     }
 
     return (
-        
-        <div className="message-item out">
+        <div className="chat-messages" id="messages">      
             {messages.map(message => (
                 <>
-                <span className="date" key={message}>{datetime()}</span>
-                <span className="message" key={message}>{message}</span>
+                <div className="message-item out">
+                    <span className="date" key={message}>{datetime()}</span>
+                    <span className="message" key={message}>{message}</span>
+                </div>
+                <div className="message-item in">
+                    <span className="date" key={message}>{datetime()}</span>
+                    <span className="message" key={message}>{message}</span>
+                </div>
                 </>
             ))}
             <div ref={messagesEndRef} />
         </div>
+        
     );
   };
 
@@ -39,9 +45,7 @@ function ChatWindow () {
     return (
         <>
         <div className="chat-window">
-            <div className="chat-messages" id="messages">
-                <Messages messages={messages} />
-            </div>
+            <Messages messages={messages} />           
         </div>
         <div className="chat-input">
             <textarea type="text" placeholder="Skriv ditt meddelande..."></textarea>

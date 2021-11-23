@@ -1,0 +1,10 @@
+.chat-header {
+    background: #888;
+    padding: var(--paddingMedium);
+    position: sticky;
+    top:0;
+}
+.chat-header h1 {
+    color: #fff;
+    margin: 0;
+}
