@@ -1,0 +1,38 @@
+.chat-shell {
+    display:flex;
+    width:100%;
+    height: 100%;
+}
+
+.chat-shell .chat-col {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.chat-shell .chat-col.left-col {
+    max-width:300px;
+    padding: var(--paddingDefault);
+    background: #383838;
+}
+.chat-shell .chat-col.right-col {
+    background: #181818;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.chat-shell .chat-col > div {
+    width: 100%;
+}
+
+/* On screens that are 768px or less*/
+@media screen and (max-width: 768px) {
+    .chat-shell .chat-col.left-col {
+        max-width:100px;
+    }
+}
+/* On screens that are 568px or less*/
+@media screen and (max-width: 568px) {
+    .chat-shell .chat-col.left-col {
+        display: none;
+    }
+}

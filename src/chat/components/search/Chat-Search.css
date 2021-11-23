@@ -1,0 +1,12 @@
+/* On screens that are 768px or less*/
+@media screen and (max-width: 768px) {
+    .search {
+        display: none;
+    }
+}
+/* On screens that are 568px or less*/
+@media screen and (max-width: 568px) {
+    .search {
+        display: none;
+    }
+}

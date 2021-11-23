@@ -1,0 +1,84 @@
+/*window container*/
+
+.chat-window {
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/*Chatmeddelande*/
+
+.message-item { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    clear:both;
+}
+
+.message-item .message {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    color: #FFF;
+}
+
+.message-item.in {
+    float:left; 
+}
+.message-item.in .message {
+    background: rgb(104, 104, 104);
+    align-self: flex-start;
+}
+.message-item.out {
+    float:right;  
+}
+
+.message-item.out .message {
+    background: rgb(0, 119, 255);
+    align-self: flex-end;
+}
+
+.message-item .date {
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: #FFF;
+    text-align: center;
+}
+.message-item .status {
+    display: none;
+}
+
+.message-item:last-of-type .status {
+    display: block;
+    color: #fff;
+    font-size: 11px;
+}
+
+.message-item.in .status {
+    align-self: flex-start;
+}
+
+.message-item.out .status {
+    align-self: flex-end;
+}
+
+/*input*/
+.chat-input {
+    margin-top: auto;
+    display:flex;
+    align-self: flex-end;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    padding: 10px;
+    background: #181818;
+}
+.chat-input textarea {
+    width: 100%;
+    background: #777777;
+    color: #FFF;
+    outline:none;
+}
+
+.chat-input button {
+    margin-left: var(--paddingSmall);
+}
