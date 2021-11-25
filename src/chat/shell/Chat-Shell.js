@@ -13,7 +13,7 @@ function ChatShell () {
             <div className="chat-col left-col">
                 <ChatSearch/>
                 <Conversations/>
-                <DarkmodeButton />
+                <DarkmodeButton  />
             </div>
             <div className="chat-col right-col">
                 <ChatHeader/>

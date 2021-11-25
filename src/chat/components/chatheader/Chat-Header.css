@@ -4,8 +4,54 @@
     border-bottom: 1px solid var(--lightModeBorderColor);
     position: sticky;
     top:0;
+    display:flex;
+    gap: 20px;
+    align-items: center;
+}
+.chat-header .header-menu-conversations {
+    display: none;
+}
+.chat-header .profile-img {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    overflow: hidden;
+}
+
+.chat-header .profile-img img {
+    max-width: 100%;
+    height: auto!important;
 }
 .chat-header h1 {
     color: var(--lightModeTextColor);
+    font-size: 18px;
     margin: 0;
+}
+
+.chat-header .header-menu {
+    margin-left: auto;
+}
+
+/* On screens that are 768px or less*/
+@media screen and (max-width: 768px) {
+    .chat-header {
+        padding: var(--paddingSmall);
+    }
+    .chat-header .profile-img {
+        height: 50px;
+        width: 50px;
+    }
+}
+/* On screens that are 568px or less*/
+@media screen and (max-width: 568px) {
+    .chat-header {
+        padding: var(--paddingSmall);
+    }
+    .chat-header .header-menu-conversations {
+        display: block;
+    }
+    .chat-header .profile-img {
+        height: 30px;
+        width: 30px;
+    }
 }

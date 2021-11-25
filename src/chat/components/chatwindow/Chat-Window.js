@@ -1,6 +1,11 @@
 import './Chat-Window.css';
+import ChatInput from './chatinput/Chat-Input';
 import React, { useState, useEffect, useRef } from "react";
 import uuid from "uuid";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+
+
 
 const Messages = ({ messages }) => {
     const messagesEndRef = useRef(null);
@@ -8,7 +13,7 @@ const Messages = ({ messages }) => {
       messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
     };
     useEffect(scrollToBottom, [messages]);
-    
+
     var datetime = ()=> {
         var showdate=new Date().toLocaleString();
         return (
@@ -17,7 +22,7 @@ const Messages = ({ messages }) => {
     }
 
     return (
-        <div className="chat-messages" id="messages">      
+        <div className="chat-messages" id="messages">
             {messages.map(message => (
                 <>
                 <div className="message-item out">
@@ -32,7 +37,6 @@ const Messages = ({ messages }) => {
             ))}
             <div ref={messagesEndRef} />
         </div>
-        
     );
   };
 
@@ -45,11 +49,13 @@ function ChatWindow () {
     return (
         <>
         <div className="chat-window">
-            <Messages messages={messages} />           
+            <Messages messages={messages} />
         </div>
         <div className="chat-input">
-            <textarea type="text" placeholder="Skriv ditt meddelande..."></textarea>
-            <button onClick={addMessages}>Send</button>
+            <ChatInput/>           
+            <button onClick={addMessages}>
+                <FontAwesomeIcon icon={faPaperPlane} />
+            </button>
         </div>
         </>
     )

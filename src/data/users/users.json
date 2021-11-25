@@ -1,0 +1,22 @@
+[
+    {
+        "firstName": "Norkaz",
+        "lastName": "Github",
+        "gender": "man",
+        "age": 29,
+        "picture": [
+            { "type": "image", "url": "/images/users/thumbs/placeholder.png" }
+        ]
+    },
+    {
+        "firstName": "User",
+        "lastName": "Lastname",
+        "gender": "man",
+        "age": 27,
+        "picture": [
+            { "type": "image", "url": "/images/users/thumbs/placeholder.png" }
+        ]
+    }
+]
+
+

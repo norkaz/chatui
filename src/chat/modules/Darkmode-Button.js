@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
-function DarkmodeButton(props) {
+function DarkmodeButton() {
   const [checked, setChecked] = useState(false);
   const toggleChecked = () => setChecked(value => !value);
   return (
     <>
+    
     <input
       id="darkmode-check"
       type="checkbox"
@@ -14,6 +15,7 @@ function DarkmodeButton(props) {
       className={checked ? 'active' : 'inactive'}
     />
     <label for="darkmode-check">Darkmode</label>
+    
     </>
   )
 }

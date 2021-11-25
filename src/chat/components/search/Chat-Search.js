@@ -3,7 +3,7 @@ import './Chat-Search.css';
 function ChatSearch() {
     return (
         <div className="search">
-            <input type="search" placeholder="sök"></input>
+            <input type="search" placeholder="Sök"></input>
         </div>
     )
 }

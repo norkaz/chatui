@@ -1,0 +1,16 @@
+/*input*/
+.chat-input .input-wrapper {
+    background: var(--lightModeInputBackground);
+    padding: 9px var(--paddingSmall);
+    border-radius: var(--borderRadius);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.chat-input textarea {   
+    width: 100%;
+    padding: 0;
+    outline:none;
+    
+}
+  

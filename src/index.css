@@ -18,11 +18,10 @@
   background: #555;
 }
 
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-size: var(--fontSize);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--lightModeTextColor);
@@ -34,6 +33,7 @@ html, body, div#root {
   width: 100%;
   height: 100%;
   display: flex;
+  overflow: hidden;
   font-size: var(--fontSize);
   font-family: var(--fontDefault);
 }
@@ -52,8 +52,9 @@ code {
 
 :root {
   /*fonts*/
-  --fontSize: 20px;
-  --fontDefault: sans-serif;
+  --fontSize: 16px;
+  --fontSizeFields: 16px;
+  --fontDefault: 'Roboto', sans-serif;
   /*padding*/
   --paddingSmall: 0.65rem;
   --paddingDefault: 0.85rem;
@@ -95,10 +96,9 @@ code {
 input, button, textarea {
   background: var(--lightModeInputBackground);
   color: var(--lightModeTextColor);
-  font-size: var(--fontSize);
+  font-size: var(--fontSizeFields);
   font-family: var(--fontDefault);
   padding: var(--paddingSmall);
-  border-radius: var(--borderRadius);
   max-width: 100%;
   outline: none !important;
   border: 0;

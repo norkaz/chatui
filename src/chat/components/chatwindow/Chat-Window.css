@@ -58,26 +58,25 @@
 .message-item.out .status {
     align-self: flex-end;
 }
-
-/*input*/
 .chat-input {
-  border-top: 1px solid var(--lightModeBorderColor);
-  margin-top: auto;
-  display:flex;
-  align-self: flex-end;
-  width: 100%;
-  position: sticky;
-  bottom: 0;
-  padding: 10px;
-  background: var(--lightModeMainBackground);
-}
-.chat-input textarea {
+    border-top: 1px solid var(--lightModeBorderColor);
+    margin-top: auto;
+    display:flex;
+    align-self: flex-end;
+    align-items: center;
     width: 100%;
-    background: var(--lightModeInputBackground);
-    color: #FFF;
-    outline:none;
-}
-
-.chat-input button {
+    position: sticky;
+    bottom: 0;
+    font-size: 14px;
+    padding: 10px;
+    background: var(--lightModeMainBackground);
+  }
+  .chat-input button {
     margin-left: var(--paddingSmall);
+    align-self: end;
+    border-radius: var(--borderRadius);
+    background: transparent;
+    padding: 8px;
+    color: var(--primaryColor);
+    font-size: 19px;
 }
