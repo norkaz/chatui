@@ -12,10 +12,11 @@
 .chat-shell .chat-col.left-col {
     max-width:300px;
     padding: var(--paddingDefault);
-    background: #383838;
+    background: var(--lightModeConversationsBackground);
+    border-right: 1px solid var(--lightModeBorderColor);
 }
 .chat-shell .chat-col.right-col {
-    background: #181818;
+    background: var(--lightModeMainBackground);
     flex-direction: column;
     flex-wrap: nowrap;
 }

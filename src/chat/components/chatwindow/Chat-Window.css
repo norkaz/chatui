@@ -7,7 +7,7 @@
 
 /*Chatmeddelande*/
 
-.message-item { 
+.message-item {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -18,26 +18,27 @@
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 12px;
-    color: #FFF;
+    color: var(--lightModeTextColor);
 }
 
 .message-item.in {
-    float:left; 
+    float:left;
 }
 .message-item.in .message {
-    background: rgb(104, 104, 104);
+    background: var(--lightModeInputBackground);
     align-self: flex-start;
 }
 
 .message-item.out .message {
-    background: rgb(0, 119, 255);
+    background: var(--primaryColor);
+    color: var(--secondaryColor);
     align-self: flex-end;
 }
 
 .message-item .date {
     font-size: 11px;
     margin-bottom: 5px;
-    color: #FFF;
+    color: var(--lightModeTextColor);
     text-align: center;
 }
 .message-item .status {
@@ -46,7 +47,7 @@
 
 .message-item:last-of-type .status {
     display: block;
-    color: #fff;
+    color: var(--lightModeTextColor);
     font-size: 11px;
 }
 
@@ -60,18 +61,19 @@
 
 /*input*/
 .chat-input {
-    margin-top: auto;
-    display:flex;
-    align-self: flex-end;
-    width: 100%;
-    position: sticky;
-    bottom: 0;
-    padding: 10px;
-    background: #181818;
+  border-top: 1px solid var(--lightModeBorderColor);
+  margin-top: auto;
+  display:flex;
+  align-self: flex-end;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  padding: 10px;
+  background: var(--lightModeMainBackground);
 }
 .chat-input textarea {
     width: 100%;
-    background: #777777;
+    background: var(--lightModeInputBackground);
     color: #FFF;
     outline:none;
 }

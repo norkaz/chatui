@@ -1,10 +1,11 @@
 .chat-header {
-    background: #888;
+    background: var(--lightModeTitleBackground);
     padding: var(--paddingMedium);
+    border-bottom: 1px solid var(--lightModeBorderColor);
     position: sticky;
     top:0;
 }
 .chat-header h1 {
-    color: #fff;
+    color: var(--lightModeTextColor);
     margin: 0;
 }
