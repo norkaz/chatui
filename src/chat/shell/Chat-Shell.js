@@ -3,7 +3,7 @@ import ChatSearch from '../components/search/Chat-Search';
 import Conversations from '../components/conversations/Conversations';
 import ChatHeader from '../components/chatheader/Cheat-Header';
 import ChatWindow from '../components/chatwindow/Chat-Window';
-import DarkmodeButton from '../modules/Darkmode-Button';
+import ColorSchemeToggle from '../modules/ColorSchemeToggle';
 
 import './ChatShell.css';
 
@@ -13,7 +13,7 @@ function ChatShell () {
             <div className="chat-col left-col">
                 <ChatSearch/>
                 <Conversations/>
-                <DarkmodeButton  />
+                <ColorSchemeToggle/>
             </div>
             <div className="chat-col right-col">
                 <ChatHeader/>

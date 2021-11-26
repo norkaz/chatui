@@ -70,27 +70,6 @@ code {
   --breakpointMedium: 1280px;
   --breakpointSmall: 768px;
   --breakpointMini: 567px;
-  /*ui-colors*/
-  --lightModeMainBackground: #000;
-  --lightModeConversationsBackground: #000;
-  --lightModeBorderColor: #222;
-  --lightModeTitleBackground: #000;
-  --lightModeInputBackground: #1F1F1F;
-  --lightModeTextColor: #FFF;
-  /*Temp*/
-  --lightModeMainBackground: #FFFFFF;
-  --lightModeConversationsBackground: #FFFFFF;
-  --lightModeBorderColor: #CCCCCC;
-  --lightModeTitleBackground: #FFFFFF;
-  --lightModeInputBackground: #EEE;
-  --lightModeTextColor: #333;
-  /*dark ui-color*/
-  --darkModeMainBackground: #000;
-  --darkModeConversationsBackground: #000;
-  --darkModeBorderColor: #888;
-  --darkModeTitleBackground: #000;
-  --darkModeInputBackground: #1F1F1F;
-  --darkModeTextColor: #FFF;
 }
 
 input, button, textarea {
@@ -114,4 +93,44 @@ button {
 button:hover {
   background: var(--primaryColorHover);
   cursor:pointer;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+      /*USER MODE DARK*/
+    --lightModeMainBackground: #000;
+    --lightModeConversationsBackground: #000;
+    --lightModeBorderColor: #888;
+    --lightModeTitleBackground: #000;
+    --lightModeInputBackground: #1F1F1F;
+    --lightModeTextColor: #FFF;
+  }
+  body.light-mode {
+      /* && CHANGED TO LIGHT */
+    --lightModeMainBackground: #FFFFFF;
+    --lightModeConversationsBackground: #FFFFFF;
+    --lightModeBorderColor: #CCCCCC;
+    --lightModeTitleBackground: #FFFFFF;
+    --lightModeInputBackground: #EEE;
+    --lightModeTextColor: #333;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {   
+    /*USER MODE LIGHT*/
+    --lightModeMainBackground: #FFFFFF;
+    --lightModeConversationsBackground: #FFFFFF;
+    --lightModeBorderColor: #CCCCCC;
+    --lightModeTitleBackground: #FFFFFF;
+    --lightModeInputBackground: #EEE;
+    --lightModeTextColor: #333;
+  }
+  body.dark-mode {
+     /* && CHANGED TO DARK */
+    --lightModeMainBackground: #000;
+    --lightModeConversationsBackground: #000;
+    --lightModeBorderColor: #888;
+    --lightModeTitleBackground: #000;
+    --lightModeInputBackground: #1F1F1F;
+    --lightModeTextColor: #FFF;   
+  }
 }

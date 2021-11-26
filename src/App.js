@@ -1,3 +1,4 @@
+import React from 'react';
 import ChatShell from './chat/shell/Chat-Shell';
 import './App.css';
 

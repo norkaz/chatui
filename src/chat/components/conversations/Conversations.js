@@ -1,3 +1,4 @@
+import React from 'react';
 import './Conversations.css';
 var data = require('../../../data/users/users.json');
 

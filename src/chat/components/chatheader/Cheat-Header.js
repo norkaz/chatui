@@ -1,3 +1,4 @@
+import React from 'react';
 import './Chat-Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCogs, faComments } from '@fortawesome/free-solid-svg-icons'

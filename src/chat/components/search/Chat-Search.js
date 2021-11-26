@@ -1,3 +1,4 @@
+import React from 'react';
 import './Chat-Search.css';
 
 function ChatSearch() {
