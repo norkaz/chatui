@@ -1,3 +1,11 @@
+.search {
+    padding: var(--paddingMedium);
+    border-bottom: 1px solid var(--lightModeBorderColor);
+}
+.search input {
+    width: 100%;
+}
+
 /* On screens that are 768px or less*/
 @media screen and (max-width: 768px) {
     .search {

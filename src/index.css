@@ -70,6 +70,23 @@ code {
   --breakpointMedium: 1280px;
   --breakpointSmall: 768px;
   --breakpointMini: 567px;
+  /*USER MODE LIGHT*/
+  --lightModeMainBackground: #FFFFFF;
+  --lightModeConversationsBackground: #FFFFFF;
+  --lightModeBorderColor: #CCCCCC;
+  --lightModeTitleBackground: #FFFFFF;
+  --lightModeInputBackground: #EEE;
+  --lightModeTextColor: #333;
+}
+
+body.dark-mode {
+   /* && CHANGED TO DARK */
+  --lightModeMainBackground: #000;
+  --lightModeConversationsBackground: #000;
+  --lightModeBorderColor: #888;
+  --lightModeTitleBackground: #000;
+  --lightModeInputBackground: #1F1F1F;
+  --lightModeTextColor: #FFF;   
 }
 
 input, button, textarea {
@@ -112,25 +129,5 @@ button:hover {
     --lightModeTitleBackground: #FFFFFF;
     --lightModeInputBackground: #EEE;
     --lightModeTextColor: #333;
-  }
-}
-@media (prefers-color-scheme: light) {
-  :root {   
-    /*USER MODE LIGHT*/
-    --lightModeMainBackground: #FFFFFF;
-    --lightModeConversationsBackground: #FFFFFF;
-    --lightModeBorderColor: #CCCCCC;
-    --lightModeTitleBackground: #FFFFFF;
-    --lightModeInputBackground: #EEE;
-    --lightModeTextColor: #333;
-  }
-  body.dark-mode {
-     /* && CHANGED TO DARK */
-    --lightModeMainBackground: #000;
-    --lightModeConversationsBackground: #000;
-    --lightModeBorderColor: #888;
-    --lightModeTitleBackground: #000;
-    --lightModeInputBackground: #1F1F1F;
-    --lightModeTextColor: #FFF;   
   }
 }

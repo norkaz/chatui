@@ -1,3 +1,24 @@
 .conversations {
   color: var(--lightModeTextColor);
+  overflow: auto;
+  
+}
+
+.conversations .user {
+  padding: 0 var(--paddingMedium);
+  margin: var(--paddingSmall) 0;
+}
+
+.conversations .user .profile-img {
+  width: 45px;
+}
+
+/* On screens that are 768px or less*/
+@media screen and (max-width: 768px) {
+  .conversations .user .profile-img {
+    width: 100%;
+  }
+  .conversations .user .title {
+    display:none;
+  }
 }

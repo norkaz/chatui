@@ -6,29 +6,31 @@
 
 .chat-shell .chat-col {
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     width: 100%;
 }
 .chat-shell .chat-col.left-col {
     max-width:300px;
-    padding: var(--paddingDefault);
     background: var(--lightModeConversationsBackground);
     border-right: 1px solid var(--lightModeBorderColor);
 }
 .chat-shell .chat-col.right-col {
     background: var(--lightModeMainBackground);
-    flex-direction: column;
-    flex-wrap: nowrap;
 }
 
-.chat-shell .chat-col > div {
-    width: 100%;
+.chat-col.left-col .toggle-container {
+    display:flex;
+    margin-top: auto;
+    border-top: 1px solid var(--lightModeBorderColor);
+    padding: var(--paddingMedium);
 }
+
 
 /* On screens that are 768px or less*/
 @media screen and (max-width: 768px) {
     .chat-shell .chat-col.left-col {
-        max-width:100px;
+        max-width:75px;
     }
 }
 /* On screens that are 568px or less*/

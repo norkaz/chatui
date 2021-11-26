@@ -1,0 +1,21 @@
+.user {
+    display: flex;
+    align-items: center;
+    gap: var(--paddingMedium);
+}
+
+.user .profile-img {
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+}
+
+.user .profile-img img {
+    max-width: 100%;
+    height: auto!important;
+}
+.user .title {
+    color: var(--lightModeTextColor);
+    font-size: 18px;
+    margin: 0;
+}

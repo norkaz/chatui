@@ -1,11 +1,7 @@
-/**
- *
- * ColorSchemeToggle
- *
- */
  import * as React from "react";
  import Toggle from 'react-toggle';
  import "react-toggle/style.css";
+ import './Color-Scheme-Toggle.css';
  import { useColorScheme } from './useColorScheme';
  
  const ColorSchemeToggle: React.FC = () => {
@@ -15,7 +11,6 @@
        <Toggle
          checked={isDark}
          onChange={(event) => setIsDark(event.target.checked)}
-         icons={{ checked: '🌙', unchecked: '🔆' }}
          aria-label="Dark mode"
        />
      </div>
