@@ -14,7 +14,7 @@
 }
 
 /* On screens that are 768px or less*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 568px) {
   .conversations .user .profile-img {
     width: 100%;
   }

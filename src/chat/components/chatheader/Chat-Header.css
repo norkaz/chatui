@@ -37,7 +37,9 @@
         padding: var(--paddingSmall);
     }
     .chat-header .header-menu-conversations {
-        display: block;
+        display: flex;
+        align-items: center;
+        gap: var(--paddingSmall);
     }
     .chat-header .user .profile-img {
         height: 30px;

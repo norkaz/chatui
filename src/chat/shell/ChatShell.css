@@ -35,7 +35,17 @@
 }
 /* On screens that are 568px or less*/
 @media screen and (max-width: 568px) {
-    .chat-shell .chat-col.left-col {
-        display: none;
+    .chat-shell .chat-col.left-col {        
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+        max-width: 75%;
+        left: -100%;
+        transition: ease-in-out 0.3s all;
+
+    }
+    .chat-shell .chat-col.left-col.open {        
+        left:0;
     }
 }
